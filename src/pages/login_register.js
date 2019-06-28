@@ -167,7 +167,7 @@ fetch('http://localhost:5000/register', {
             placeholder="john@doe.com"
             onChange={this.handleInputChange}
           />
-          <span className="help-block">{validation.email.message}</span>
+          <span className="help-block  text-danger">{validation.email.message}</span>
         </div>
 
         <div className={validation.password.isInvalid && 'has-error'}>
@@ -176,7 +176,7 @@ fetch('http://localhost:5000/register', {
             name="password"
             onChange={this.handleInputChange}
           />
-          <span className="help-block">{validation.password.message}</span>
+          <span className="help-block   text-danger">{validation.password.message}</span>
         </div>
 
         <br/>
