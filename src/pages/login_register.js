@@ -65,7 +65,7 @@ class Login_Register extends Component {
         password: this.state.password
         }
        
-fetch('http://localhost:5000/login', {
+fetch('http://34.93.54.35:8080/login', {
   method: 'POST',
   body: JSON.stringify(requestBody),
   headers: {
@@ -116,7 +116,7 @@ fetch('http://localhost:5000/login', {
         password: this.state.password
         }
        
-fetch('http://localhost:5000/register', {
+fetch('http://34.93.54.35:8080/register', {
   method: 'POST',
   body: JSON.stringify(requestBody),
   headers: {
