@@ -89,7 +89,7 @@ export default class CreateThreadModel extends React.Component {
 
         if (validation.isValid) {
       e.preventDefault()
-      fetch('http://34.93.54.35:8080/threads', {
+      fetch('https://dcoder-server.herokuapp.com/threads', {
       method: 'POST',
       body: JSON.stringify(data),
       headers: {

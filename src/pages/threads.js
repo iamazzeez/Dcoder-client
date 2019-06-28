@@ -33,7 +33,7 @@ export default class Threads extends Component {
       
       
           getAll = () => {
-              fetch('http://34.93.54.35:8080/threads', {
+              fetch('https://dcoder-server.herokuapp.com/threads', {
                   method: 'GET',
                   body: null,
                   headers: {

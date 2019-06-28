@@ -65,7 +65,7 @@ class Login_Register extends Component {
         password: this.state.password
         }
        
-fetch('http://34.93.54.35:8080/login', {
+fetch('https://dcoder-server.herokuapp.com/login', {
   method: 'POST',
   body: JSON.stringify(requestBody),
   headers: {
@@ -116,7 +116,7 @@ fetch('http://34.93.54.35:8080/login', {
         password: this.state.password
         }
        
-fetch('http://34.93.54.35:8080/register', {
+fetch('https://dcoder-server.herokuapp.com/register', {
   method: 'POST',
   body: JSON.stringify(requestBody),
   headers: {
