@@ -69,7 +69,6 @@ export default class Threads extends Component {
        
         return (
             <div className="container ">
-                {/* <Search data={this.state.data} /> */}.
                 <div className="container m-2" style={{maxWidth: "30rem"}}>
                 <input className="form-control mr-sm-2" 
                 type="text" 

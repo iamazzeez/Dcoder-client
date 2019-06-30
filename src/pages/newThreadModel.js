@@ -113,12 +113,6 @@ export default class CreateThreadModel extends React.Component {
     }
     render() {
 
-      console.log({title: this.state.title,
-        description: this.state.description, 
-        tags: this.state.tags, 
-        email: this.state.email, 
-        userId: this.state.userId} )
-
         let validation = this.submitted ?                         // if the form has been submitted at least once
         this.validator.validate(this.state) :   // then check validity every time we render
         this.state.validation                   // otherwise just use what's in state

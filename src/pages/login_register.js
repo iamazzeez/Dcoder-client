@@ -58,7 +58,6 @@ class Login_Register extends Component {
 
     if (validation.isValid) {
       // handle actual form submission here
-      console.log(this.state.email, this.state.password)
 
       const requestBody = {           
         email: this.state.email,
@@ -109,7 +108,6 @@ fetch('https://dcoder-server.herokuapp.com/login', {
 
     if (validation.isValid) {
       // handle actual form submission here
-      console.log(this.state.email, this.state.password)
 
       const requestBody = {           
         email: this.state.email,
