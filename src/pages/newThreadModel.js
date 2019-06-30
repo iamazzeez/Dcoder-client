@@ -7,12 +7,6 @@ export default class CreateThreadModel extends React.Component {
     constructor(props, context) {
       super(props, context);
   
-      this.handleShow = this.handleShow.bind(this);
-      this.handleClose = this.handleClose.bind(this);
-      this.onChangeTitle = this.onChangeTitle.bind(this);
-      this.onChangeDescription = this.onChangeDescription.bind(this);
-      this.onChangeTags = this.onChangeTags.bind(this);
-      this.onSubmit = this.onSubmit.bind(this);
 
       this.validator = new FormValidator([
         { 
@@ -49,11 +43,11 @@ export default class CreateThreadModel extends React.Component {
       };
     }
   
-    handleClose() {
+    handleClose = () => {
       this.setState({ show: false });
     }
   
-    handleShow() {
+    handleShow = () => {
       this.setState({ show: true });
     }
 
